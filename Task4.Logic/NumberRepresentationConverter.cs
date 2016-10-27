@@ -20,7 +20,7 @@ namespace Task4.Logic
             sb.Append(value < 0 ? '1' : '0');
             for (int i = 62; i >= 0; i--)
             {
-                sb.Append((value & (1 << i)) != 0 ? '1' : '0');
+                sb.Append((value & ((long)1 << i)) != 0 ? '1' : '0');
             }
             return sb.ToString();
         }
