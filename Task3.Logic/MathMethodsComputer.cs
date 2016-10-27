@@ -17,6 +17,7 @@ namespace Task3.Logic
             if (epsilon <= 0)
                 throw new ArgumentException("epsilon must be greater than 0");
             double xk;
+            epsilon /= 10;
             double xkp1 = 1;
             do
             {

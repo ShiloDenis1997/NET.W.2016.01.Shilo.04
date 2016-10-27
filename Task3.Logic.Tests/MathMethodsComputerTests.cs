@@ -22,6 +22,8 @@ namespace Task3.Logic.Tests
             Description = "Test power = 1")]
         [TestCase(25489, 9, 1e-6, 3.087413,
             Description = "Test big power root from big value")]
+        [TestCase(0.3, 10, 1e-10, 0.8865681505,
+            Description = "Less than 1 value, big power test, and little epsilon test")]
         [Test]
         public void Sqrtn_ValueEpsilon_RootOfDegreeNReturn
             (double value, int power, double epsilon, double expected)
