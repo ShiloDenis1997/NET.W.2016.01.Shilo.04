@@ -4,6 +4,14 @@ namespace Task3.Logic
 {
     public static class MathMethodsComputer
     {
+        /// <summary>
+        /// Method computes root of n degree from value. It uses
+        /// Newton's method
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="power">degree of root</param>
+        /// <param name="epsilon">accurancy of calculations</param>
+        /// <returns></returns>
         public static double Sqrtn(this double value, int power, double epsilon)
         {
             if (power < 1)
@@ -24,6 +32,13 @@ namespace Task3.Logic
             return xkp1;
         }
 
+        /// <summary>
+        /// Do one iteration of Newton's method
+        /// </summary>
+        /// <param name="xk">current approximation</param>
+        /// <param name="value">original value</param>
+        /// <param name="power">degree of root</param>
+        /// <returns>next approximation of sqrtn(value)</returns>
         private static double SqrtnNewtonIteration(double xk, double value, int power)
         {
             return ((power - 1) * xk + value / Math.Pow(xk, power - 1)) / power;
