@@ -19,7 +19,7 @@ namespace Task4.Logic.Tests
             Description = "Positive value with good fraction (power of 5)")]
         [TestCase(451387.2345,
             ExpectedResult = "0100000100011011100011001110110011110000001000001100010010011100",
-            Description = "Posititve value with vad fraction (not power of 5)")]
+            Description = "Posititve value with bad fraction (not power of 5)")]
         [TestCase(-155,
             ExpectedResult = "1100000001100011011000000000000000000000000000000000000000000000",
             Description = "Negative round value")]
